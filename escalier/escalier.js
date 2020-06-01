@@ -1,3 +1,4 @@
+// node escalier.js 26
 var myStairs = process.argv[2];
 function stairs(stairs = 0){
     if(stairs == 0){
@@ -7,18 +8,18 @@ function stairs(stairs = 0){
             var spaceInt = stairs - i,
                 stepsInt = i,
                 step = "",
-                j = 1,
-                k = 1;
+                spaceIndex = 1,
+                stepIndex = 1;
 
             // Spaces
-            while(j <= spaceInt){
+            while(spaceIndex <= spaceInt){
                 step += " ";
-                j++;
+                spaceIndex++;
             };
             // Steps
-            while(k <= stepsInt){
+            while(stepIndex <= stepsInt){
                 step += "#";
-                k++;
+                stepIndex++;
             }
             console.log(step);
         }
