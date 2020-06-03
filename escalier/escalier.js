@@ -1,9 +1,7 @@
 // node escalier.js 26
 var myStairs = process.argv[2];
 function stairs(stairs = 0){
-    if(stairs == 0){
-        console.log("Pour atteindre le sommet il te faut viser haut!");
-    }else{
+    if(stairs > 0){
         for(var i = 1; i <= stairs; i++){
             var spaceInt = stairs - i,
                 stepsInt = i,
@@ -23,6 +21,8 @@ function stairs(stairs = 0){
             }
             console.log(step);
         }
+    }else{
+        console.log("Pour atteindre le sommet il te faut viser haut! : " + myStairs);
     }
 }
 stairs(myStairs);
