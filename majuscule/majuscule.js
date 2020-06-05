@@ -1,9 +1,9 @@
-var arg = process.argv[2];
+let arg = process.argv[2];
 if(arg){
     // Tableau des mots à traiter
-    var words = arg.split(' ');
+    let words = arg.split(' ');
     // Tableau vide pour recevoir ma phrase transformée
-    var newWords = [];
+    let newWords = [];
     // Je parcours chaque mots de ma phrase
     words.forEach(word => {
         // Chaise de caractère vide pour accueillir  le nouveau mot
