@@ -15,7 +15,7 @@ if(arg){
             if(i%2){
                 newWord += word.charAt(i).toUpperCase(); // to maj
             }else{
-                newWord += word.charAt(i); // to maj
+                newWord += word.charAt(i).toLowerCase(); // to maj
             }
         }
         // J'ajoute le mot terminé au tableau de la phrase
