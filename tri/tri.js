@@ -1,6 +1,18 @@
 const args = process.argv;
 // Prendre tous mes éléments à partie de 3; Supprimer les 2 premiers.
 args.splice(0,2);
+/**
+ * Si je ne fais pas ça, il prend mes arguments pour des chaines de
+ * caractère et ne me triait pas mes nombres à 2 chiffres correctement.
+ * Je devais donc m'assurer que ça soit un nombre et pas un string dans
+ * mon tableau. Sinon 10 et 1 étaient au même niveau.
+ */
+var argsToInt = args.map(function (x) { 
+    return Number(x);
+});
+
+console.log(args);
+console.log(argsToInt);
 
 function bubbleSort(items) {
     var length = items.length;
