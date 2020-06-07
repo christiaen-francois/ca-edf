@@ -2,9 +2,7 @@ let arg = process.argv[2];
 
 // On passe le nombre envoyé en agument de la fonction
 function factoriel(nbr){
-    console.log(nbr);
-    // Si le nombre n'est pas égal à 0,
-    // on le multiple par son facotoriel - 1
+    // On multiple le nombre par lui même -1 jusuq'à arriver à 0.
     if (nbr === 0){
         return 1;
     }else{
